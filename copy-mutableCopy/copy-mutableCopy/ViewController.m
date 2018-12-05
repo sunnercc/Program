@@ -61,8 +61,8 @@
 //    m_str3 -> = 0x600003143e70
     
     // 可以看出
-    // m_str1指向的地址和str2指向的地址不是同一个地址. str2开辟了新的空间.
-    // m_str1指向的地址和str3指向的地址不是同一个地址。str3开辟了新的空间
+    // m_str1指向的地址和m_str2指向的地址不是同一个地址. m_str2开辟了新的空间.
+    // m_str1指向的地址和m_str3指向的地址不是同一个地址。m_str3开辟了新的空间
 }
 
 - (void)demo3
@@ -80,11 +80,11 @@
     }
     printf("\n arr2 items:");
     for (int i = 0; i < arr2.count; i++) {
-        printf("\n %d -> = %p", i, arr1[i]);
+        printf("\n %d -> = %p", i, arr2[i]);
     }
-    printf("\n arr2 items:");
-    for (int i = 0; i < arr2.count; i++) {
-        printf("\n %d -> = %p", i, arr1[i]);
+    printf("\n arr3 items:");
+    for (int i = 0; i < arr3.count; i++) {
+        printf("\n %d -> = %p", i, arr3[i]);
     }
     
     printf("\n demo3 end.\n");
@@ -100,7 +100,7 @@
 //    0 -> = 0xb690da9c196700a8
 //    1 -> = 0xb690da9c19670098
 //    2 -> = 0xb690da9c19670088
-//    arr2 items:
+//    arr3 items:
 //    0 -> = 0xb690da9c196700a8
 //    1 -> = 0xb690da9c19670098
 //    2 -> = 0xb690da9c19670088
@@ -129,11 +129,11 @@
     }
     printf("\n m_arr2 items:");
     for (int i = 0; i < m_arr2.count; i++) {
-        printf("\n %d -> = %p", i, m_arr1[i]);
+        printf("\n %d -> = %p", i, m_arr2[i]);
     }
-    printf("\n m_arr2 items:");
-    for (int i = 0; i < m_arr2.count; i++) {
-        printf("\n %d -> = %p", i, m_arr1[i]);
+    printf("\n m_arr3 items:");
+    for (int i = 0; i < m_arr3.count; i++) {
+        printf("\n %d -> = %p", i, m_arr3[i]);
     }
     
     printf("\n demo4 end.\n");
@@ -149,7 +149,7 @@
 //    0 -> = 0xb690da9c196700a8
 //    1 -> = 0xb690da9c19670098
 //    2 -> = 0xb690da9c19670088
-//    m_arr2 items:
+//    m_arr3 items:
 //    0 -> = 0xb690da9c196700a8
 //    1 -> = 0xb690da9c19670098
 //    2 -> = 0xb690da9c19670088
