@@ -17,7 +17,7 @@
 
 //[※※]@synthesize和@dynamic分别有什么作用？
 // @synthesize自动合成set get ivar
-// @dynamic 不生成 set get
+// @dynamic 不生成 set get的实现
 
 //[※※※]ARC下，不显式指定任何属性关键字时，默认的关键字都有哪些？
 // readwrite atomic retain
@@ -149,7 +149,7 @@
 // __block
 
 //[※※※]使用系统的某些block api（如UIView的block版本写动画时），是否也考虑引用循环问题？
-// 不用考虑，因为当前类并没有强引用UIView。不存在引用循环
+// 因为block是立即执行的，所以会立刻释放self。
 
 //[※※]GCD的队列（dispatch_queue_t）分哪两种类型？
 // searil 串行

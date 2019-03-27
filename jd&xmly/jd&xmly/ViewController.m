@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import <objc/runtime.h>
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *view1 = [[UIView alloc] init];
+    UIView *view2 = [[UIView alloc] init];
+    
+    
 }
 
 

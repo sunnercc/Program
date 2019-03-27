@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		134E986D21C203B1008E1C2E /* b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = b.h; sourceTree = "<group>"; };
 		134E986F21C22F4E008E1C2E /* c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		1374975521CA43AB001DD725 /* d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = d.h; sourceTree = "<group>"; };
 		13BFEF4B21B8AA93004C2FA2 /* jd&xmly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jd&xmly.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BFEF4E21B8AA93004C2FA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13BFEF4F21B8AA93004C2FA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 				13BFEF6421B8AAA5004C2FA2 /* a.h */,
 				134E986D21C203B1008E1C2E /* b.h */,
 				134E986F21C22F4E008E1C2E /* c.h */,
+				1374975521CA43AB001DD725 /* d.h */,
 			);
 			path = "jd&xmly";
 			sourceTree = "<group>";

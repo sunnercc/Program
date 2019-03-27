@@ -18,13 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    @try {
-        objc_sync_enter(obj);
-    } @catch (NSException *exception) {
-        <#Handle an exception thrown in the @try block#>
-    } @finally {
-        <#Code that gets executed whether or not an exception is thrown#>
-    }
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+    view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:view];
+    NSLog(@"%@", view.layer.mask);
+    view.layer.cornerRadius = 30;
+    view.layer.masksToBounds = YES;
+    NSLog(@"%@", view.layer.mask);
+    
 }
 
 
